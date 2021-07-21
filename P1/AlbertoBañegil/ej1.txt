@@ -1,0 +1,14 @@
+
+-Cirq: Aunque este simulador no es tan eficiente como los simuladores de estado puro, permiten la ejecución de una clase más grande de circuitos ruidosos, así como el seguimiento de la matriz de densidad de la simulación. Este hecho puede permitir simulaciones más exactas
+
+-Forest: Para ejecutar el simulador antes hace falta iniciar los servidores quilc y qvm, con los comandos quilc -S y qvm -S. "qc" se refiere a un computador cuático simulado. Con .run_and_measure, le decimos a QVM que ejecute el programa y así colapse el estado con una medición y nos devuelva los resultados. En "trials" le decimos el número de veces que queremos ejecutar el programa
+
+-ProjectQ: En el ordenador de la facultad me funcionó, pero al ejectuarlo en el de mi casa me sale este error 'parece que el kernel ha muerto', supongo que es porque no es tan potente. Con projectQ también podemos simular con IBM Quantum Experience. Con el operando '|' podemos tanto poner un qubit en superposición como medirlo
+
+-Tket: con pytket se puede interactuar con otros software cuánticos famosos como Qiskit y Cirq entre muchos otros, y el código es muy familiar y parecido a estos. De hecho, en el ejercicio se usa el paquete Aer de Qiskit
+
+-Qiskit: En una simulación ideal, el estado producido al ejecutar este circuito sería el estado GHZ anterior. En Qiskit, las operaciones se pueden agregar al circuito una por una. Con la función ComoLLamemosAlCircuito.draw() podemos dibujar el circuito
+
+SIMILITUDES: por debajo, cada entorno usará un randomGenerator() clásico, más o menos complejo, por lo que las veces que sale '0' o '1' son más o menos iguales estadísticamente
+
+DIFERENCIAS: muchos simuladores como Tket, hacen funciones juntas como run and measure, mientras que otros como Qiskit las hacen por separado.
